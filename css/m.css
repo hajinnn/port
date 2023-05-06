@@ -10,12 +10,15 @@
         bottom: 10px;
         right: 0px;
         z-index: 9999;
+        font-size: 0;
     }
     .top-btn svg{
         width: 50px;
+        height: 50px;
     }
     .page-one-wrap{
         height: 812px;
+        overflow: hidden;
     }
     .page-one-wrap .text-wrap .rhombus{
         width: 300px;
@@ -25,7 +28,9 @@
         width: 300px;
         height: 300px;
     }
-   
+    .page{
+        height: 100%;
+    }
     #main_menu {
 
         line-height: 15px;
@@ -88,6 +93,7 @@
         left: 10px;
         top: 20px;
     }
+    
     
     .page-one-wrap .text-wrap .typing-main{
         width: 11ch;
@@ -254,13 +260,15 @@
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide{
         padding: 0 56px;
+        margin-top: 20px;
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right{
         width: 100%;
         /* height: 200px; */
-        padding-bottom: 40px;
+        /* padding-bottom: 40px; */
         margin-left: 0;
         justify-content: center;
+        height: 300px;
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box{
         text-align: center;
@@ -287,7 +295,7 @@
     
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one .con-left{
         width: 100%;
-        height: 400px;
+        height: 300px;
         /* overflow: hidden; */
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one .con-left svg{
@@ -297,7 +305,7 @@
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one .con-left .con-img{
         width: 100%;
-        height: 400px;
+        height: 300px;
         /* padding-bottom: 57.179%; */
         /* overflow: hidden; */
         overflow: hidden;
@@ -305,7 +313,7 @@
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one .con-left .con-img img{
         width: 100%;
-        height: 400px;
+        height: 300px;
         overflow: hidden;
         object-fit: cover;
     }
@@ -319,7 +327,7 @@
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.two .con-left .con-img img{
         width: 100%;
-        height: 400px;
+        height: 300px;
         overflow: hidden;
         object-fit: cover;
     }
@@ -333,7 +341,7 @@
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.three .con-left .con-img img{
         width: 100%;
-        height: 400px;
+        height: 300px;
         overflow: hidden;
         object-fit: cover;
     }
@@ -347,16 +355,16 @@
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.four .con-left .con-img img{
         width: 100%;
-        height: 400px;
+        height: 300px;
         overflow: hidden;
         object-fit: cover;
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img .con-img-hover.two{
-        height: 400px;
+        height: 300px;
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img .con-img-hover{
-        line-height: 400px;
-        height: 400px;
+        line-height: 300px;
+        height: 300px;
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one .con-left svg{
         display: none;
@@ -414,7 +422,7 @@
     }
     .swiper{
         height: 83vh;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     .swiper-slide{
         justify-content: center;
@@ -429,11 +437,13 @@
     .swiper-button-next{
         top: 600px;
         right: 40px;
+        display: none;
     }
     
     .swiper-button-prev{
         top: 600px;
         left: 40px;
+        display: none;
     }
     .menu-box{
         top: 50%;
@@ -472,7 +482,7 @@
     
     }
     .sec5-wrap{
-        padding: 40px 0;
+        padding: 60px 0;
         height: 812px;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-backface-hidden .swiper-slide{
@@ -552,22 +562,40 @@
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .centerer{
         width: 240px;
+        
+    }
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .centerer .btns-wrap{
+        width: 200px;
+        float: none;
+        /* margin: 0 auto; */
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .centerer .btns-wrap .btn-re.one.petmood{ 
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 12px;
+    }
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .centerer .btns-wrap .btn-re.one.jabala{
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 12px;
+    }
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .centerer .btns-wrap .btn-re.one.healing-i{
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
         font-size: 12px;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .centerer .btns-wrap .btn-or.one.portfolio span{
-        line-height: 100px;
+        line-height: 80px;
         font-size: 12px;
     }
  
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .centerer .btns-wrap .btn-or.one.portfolio{
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
         font-size: 12px;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .ui-logo svg{
