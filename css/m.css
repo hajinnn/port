@@ -18,7 +18,7 @@
         
     }
     .page-one-wrap{
-        height: 812px;
+        /* height: 812px; */
         overflow: hidden;
     }
     .page-one-wrap .text-wrap .rhombus{
@@ -484,7 +484,7 @@
     }
     .sec5-wrap{
         padding: 60px 0;
-        height: 812px;
+        /* height: 812px; */
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-backface-hidden .swiper-slide{
         display: flex;
@@ -633,11 +633,11 @@
     }
 
 
-    
+ 
     .sec6-wrap{
         padding: 60px 0;
-        overflow-x: hidden;
-        height: 812px;
+        /* overflow-x: hidden; */
+        /* height: 812px; */
     }
     .sec6-wrap .sec6-content-wrap{
         overflow: hidden;
