@@ -12,6 +12,7 @@
         z-index: 9999;
         font-size: 0;
     }
+    
     .top-btn svg{
         width: 50px;
         height: 50px;
@@ -211,9 +212,13 @@
     .sec3-wrap{
         height: 812px;
     }
+    .sec3-wrap .head-txt{
+        margin-bottom: 40px;
+      }
     .sec3-wrap .graph-wrap{
         height: none;
         margin-bottom: 0;
+        justify-content: center;
     }
     .sec3-wrap .graph-wrap .top-graph{
         margin-bottom: 0;

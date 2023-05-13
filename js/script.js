@@ -17,7 +17,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -39,7 +39,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -60,7 +60,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -81,7 +81,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -103,7 +103,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -124,7 +124,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -145,7 +145,7 @@ $(document).ready(function(){
             gradientAngle: Math.PI / 2
           },
           animation:{
-            duration:2000,
+            duration:2500,
             easing:"swing"
           },
           lineCap : "butt",
@@ -167,7 +167,7 @@ $(document).ready(function(){
             gradientAngle: Math.PI / 2
           },
           animation:{
-            duration:2000,
+            duration:2500,
             easing:"swing"
           },
           lineCap : "butt",
@@ -188,7 +188,7 @@ $(document).ready(function(){
             color:["#cccccc"],
           },
           animation:{
-            duration:2000,
+            duration:2500,
             // easing:"swing"
           },
           lineCap : "butt",
@@ -197,12 +197,8 @@ $(document).ready(function(){
           }).on('circle-animation-progress', function(event, progress) {
                 $(this).find('strong').html(Math.round(perNummmmmm * progress) + '<i>%</i>');
           });
-
   }
   
-
-
-
 // 풀페이지 슬라이드 (메뉴클릭)
 
 var ww = $(window).width();
@@ -249,7 +245,7 @@ $('.menu').click(function(){
 
 
     
-    var scroll = $('.sec3-wrap').height() + 800;
+    var scroll = $('.sec3-wrap').height() + 400;
     
     console.log("scroll: " + scroll + "sct: " + sct);
     
@@ -348,12 +344,20 @@ $('.menu').click(function(){
 
 
     //상단이동버튼
+    // const btn = $('.top-btn');
+    // $(window).scroll(function(){
+    //   if($(window).scrollTop() > 300){
+    //       btn.fadeIn();
+    //   }else{
+    //       btn.fadeOut();
+    //   }
+    // });
     const btn = $('.top-btn');
     $(window).scroll(function(){
       if($(window).scrollTop() > 300){
-          btn.fadeIn();
+          btn.addClass('active');
       }else{
-          btn.fadeOut();
+          btn.removeClass('active');
       }
     });
 
