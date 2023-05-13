@@ -213,7 +213,7 @@
         height: 812px;
     }
     .sec3-wrap .head-txt{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
     .sec3-wrap .graph-wrap{
         height: none;
@@ -640,7 +640,7 @@
 
  
     .sec6-wrap{
-        padding: 60px 0;
+        padding: 80px 0;
         /* overflow-x: hidden; */
         /* height: 812px; */
     }
@@ -653,14 +653,15 @@
   
     .sec6-wrap .sec6-content-wrap #sec6-cursor-wrap .email-wrap .animate-slider{
         align-items: center;
+        height: 100%;
     }
     .sec6-wrap .sec6-content-wrap #sec6-cursor-wrap .email-wrap .email-copy button{
         width: 600px;
         letter-spacing: 0;
     }
     .sec6-wrap .sec6-content-wrap{
-        height: 100%;
-        padding-top: 80px;
+        height: 600px;
+        padding-top: 40px;
     }
     .sec6-wrap .sec6-content-wrap .button{
         width: 150px;
@@ -671,20 +672,21 @@
         flex-direction: column;
     }
     .sec6-wrap .sec6-content-wrap .epilogue-txt h2{
-        margin-bottom: 40px;
+        margin-bottom: 0;
     }
     .sec6-wrap .sec6-content-wrap .sec-6-center-wrap .proflie-wrap{
-        height: 130px;
-        margin-bottom: 50px;
+        height: 120px;
+        margin-bottom: 0;
     }
     .sec6-wrap .sec6-content-wrap .sec-6-center-wrap .qr-img{
         width: 100px;
+        margin-top: 40px;
     }
     .sec6-wrap .sec6-content-wrap .epilogue-txt h2{
         font-size: 40px;
     }
     .sec-6-footer{
-        padding: 40px 0;
+        padding: 20px 0;
         font-size: 8px;
     }
     .sec6-wrap .sec6-content-wrap #sec6-cursor-wrap .email-wrap .email-copy button{
