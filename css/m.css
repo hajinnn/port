@@ -97,49 +97,24 @@
     }
     
     
-    .page-one-wrap .text-wrap .typing-main{
-        width: 11ch;
-        animation: typing 2s steps(23.5), blink .5s step-end infinite alternate;
-        font-size: 1.5em;
-    }
-    .page-one-wrap .bottom-text{
-        width: 300px;
-        text-align: center;
-        font-size: 9px;
-    }
-    .page-one-wrap .text-wrap .typing-sub{
-        width: 12ch;
-        /* animation: typings 2s steps(15), blink-3 .10s step-end infinite alternate; */
-        /* white-space: nowrap; */
-        /* overflow: hidden; */
-        /* border-right: 3px solid; */
-        font-size: 1em;
-        position: absolute;
-        top: 60%;
-        transform: translateY(-60%);
-    
-        color: transparent;
-        font-weight: 200;
-        
-        font-family: 'Montserrat', sans-serif;
+    .main_text_box{
+        font-size: 1.3rem;
+        width: 270px;
+        font-weight: 600;
+
         text-transform: uppercase;
- 
-        
+        /* -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff; 
+        color: transparent; */
     }
-    .page-one-wrap .text-wrap .typing-side {
-        width: 19ch;
-        animation: typing-2 2s steps(19), blink-2 .5s step-end infinite alternate;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid;
-        font-size: 0.8em;
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fff;
-        font-family: 'Raleway', sans-serif;
-      }
+    .main_text_box 
+    .blink {
+        font-size: 1.5rem;
+    }
+    .main_text_box .text{
+        width: 300px;
+    }
+
     .sec2-wrap{
         width: 100%;
         height: 812px;

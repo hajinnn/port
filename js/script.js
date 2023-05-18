@@ -1,7 +1,24 @@
 $(document).ready(function(){
 
+
   //AOS
   AOS.init();
+
+    // 메인페이지 텍스트효과
+    const content = "Hello Introducing, \n my web publisher portfolio                            ";
+    const text = document.querySelector(".text");
+    let i = 0;
+  
+    function typing(){
+      let txt = content[i++];
+      text.innerHTML += txt=== "\n" ? "<br/>": txt;
+      if (i > content.length) {
+          text.textContent = "";
+          i = 0;
+        }
+    }
+  setInterval(typing, 150);
+
 
   //안에 sec3 원형그래프 속성 담기
   function skillScroll() {
@@ -199,6 +216,7 @@ $(document).ready(function(){
           });
   }
   
+
 // 풀페이지 슬라이드 (메뉴클릭)
 
 var ww = $(window).width();

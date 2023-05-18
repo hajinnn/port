@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
@@ -232,84 +233,55 @@ section {
     }
 }
 
-.page-one-wrap .text-wrap .typing-side {
-    width: 19ch;
-    animation: typing-2 2s steps(19), blink-2 .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: 1.3em;
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translateX(-50%);
+
+  
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+  }
+
+  .typing-side {
+    position: relative;
+    animation: fadeInUp 3s;
     color: #fff;
-    font-family: 'Raleway', sans-serif;
+    top: 20px;
   }
 
-  @keyframes typing-2 {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink-2 {
-    50% {
-      border-color: transparent
-    }
-  }
-
-
-.page-one-wrap .text-wrap .typing-main {
-    width: 11ch;
-    animation: typing 2s steps(20), blink .2s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: 4.5em;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+  .main_text_box{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
     color: #fff;
-    font-weight: 500;
-    /* -webkit-text-stroke-width: 1px; */
-    /* -webkit-text-stroke-color: #fff;  */
+    /* text-transform: uppercase; */
 
-    font-family: 'Michroma', sans-serif;
-
-
-  }
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-  .page-one-wrap .text-wrap .typing-sub{
-    width: 12ch;
-    /* animation: typings 2s steps(15), blink-3 .10s step-end infinite alternate; */
-    /* white-space: nowrap; */
-    /* overflow: hidden; */
-    /* border-right: 3px solid; */
-    font-size: 1.8em;
-    position: absolute;
-    top: 60%;
-    transform: translateY(-60%);
-
-    color: transparent;
-    font-weight: 500;
-    
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    -webkit-text-stroke-width: 1px;
+    /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff; 
-    
+    color: transparent; */
+
+    width: 1000px;
+    position: absolute;
+  }
+  .main_text_box 
+  .blink {
+    animation: blink 0.5s infinite ;
+    font-size: 2.5rem;
+  }
+  .main_text_box .text{
+    width: 1000px;
+  }
+
+
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
   }
   
   
