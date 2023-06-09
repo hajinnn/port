@@ -17,7 +17,7 @@ $(document).ready(function(){
           i = 0;
         }
     }
-  setInterval(typing, 150);
+  setInterval(typing, 100);
 
 
   //안에 sec3 원형그래프 속성 담기
@@ -281,31 +281,37 @@ $('.menu').click(function(){
         // $('header').fadeIn(500);
         // 500으로 적게되면 0.5 초로 페이드 아웃됌
         $('.menu').removeClass('active');
+        $('.portfolio-logo svg').removeClass('active');
     }else if(sct >= wh && sct < wh*2){
         // 두번째 영역
         $('.menu').removeClass('on');
         $('.menu').eq(1).addClass('on');
         $('.menu').addClass('active');
+        $('.portfolio-logo svg').addClass('active');
     }else if(sct >= wh*2 && sct < wh*3){
         // 세번째 영역
         $('.menu').removeClass('on');
         $('.menu').eq(2).addClass('on');
         $('.menu').addClass('active');
+        $('.portfolio-logo svg').addClass('active');
     }else if(sct >= wh*3 && sct < wh*4){
         // 네번째 영역
         $('.menu').removeClass('on');
         $('.menu').eq(3).addClass('on');
         $('.menu').addClass('active');
+        $('.portfolio-logo svg').addClass('active');
     }else if(sct >= wh*4 && sct < wh*5){
         // 다섯번째 영역
         $('.menu').removeClass('on');
         $('.menu').eq(4).addClass('on');
         $('.menu').addClass('active');
+        $('.portfolio-logo svg').addClass('active');
     }else if(sct >= wh*5){
       // 여섯번째 영역
       $('.menu').removeClass('on');
       $('.menu').eq(5).addClass('on');
       $('.menu').addClass('active');
+      $('.portfolio-logo svg').addClass('active');
 
   }
   });
@@ -350,14 +356,14 @@ $('.menu').click(function(){
     });
 
     // 헤더 스크롤 이벤트 (portfolio-logo svg)
-    $(window).scroll(function(){
-      const sct = $(window).scrollTop();
-      if(sct >= 800){
-          $('.portfolio-logo svg').addClass('active');
-      }else{
-          $('.portfolio-logo svg').removeClass('active');
-      }
-    });
+    // $(window).scroll(function(){
+    //   const sct = $(window).scrollTop();
+    //   if(sct >= 800){
+    //       $('.portfolio-logo svg').addClass('active');
+    //   }else{
+    //       $('.portfolio-logo svg').removeClass('active');
+    //   }
+    // });
    
 
 

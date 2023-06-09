@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 윈도우 크기가 1190px 이하 ~ 960 px 이상일때 -> 최대(max-width) 1199px    최소(min-width) 960px */
+/* 윈도우 크기가 1199px 이하 ~ 960 px 이상일때 -> 최대(max-width) 1199px    최소(min-width) 960px */
 
 @media all and (max-width:1199px) and (min-width:960px){
 
@@ -23,8 +23,9 @@
         padding: 0 75px;
     }
     .portfolio-logo svg{
-        width: 60px;
+        width: 50px;
     }
+    
     .menu-box{
         right: 30px;
     }
@@ -46,7 +47,7 @@
         padding: 60px 0;
     }
     .sec2-wrap .con-wrap .con-left{
-        justify-content: space-between;
+        /* justify-content: space-between; */
         margin-bottom: 0;
     }
     .sec2-wrap .con-wrap{
@@ -77,9 +78,9 @@
     }
 
     .sec2-wrap .con-wrap .con-left .my-photo{
-        margin-right: 30px;
-        width: 350px;
-        height: 448px;
+        margin-right: 80px;
+        width: 250px;
+        height: 320px;
     }
 
     .sec3-wrap{
@@ -125,6 +126,10 @@
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li{
         text-align: center;
     }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one .con-right .txt-box .data-box li:nth-child(3),
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li:nth-child(4){
+        display: none;
+    }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right{
         margin-left: 0;
     }
@@ -155,8 +160,18 @@
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img{
         overflow: hidden;
         border-radius: 20px;
+        height: 350px;
+        margin: 0 auto;
     }
-    
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide.four .con-left .con-img{
+        width: 80%;
+    }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img .con-img-hover{
+        line-height: 350px;
+    }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img .con-img-hover.two{
+        height: 350px;
+    }
     .swiper{
         height: 83vh;
         margin-top: 40px;
@@ -180,12 +195,62 @@
     .menu-box{
         top: 35%;
     }
+    .app-ui img{
+        width: 250px;
+        height: 542px;
+        position: absolute;
+        /* 부모의 왼쪽 상단에 달라붙게되는 속성(이미지가 포개어져서 하나로 보임) */
+        transition: 0.5s;
+        top: 0;
+        left: 0;
+        border-radius: 50px;
+        
+    }
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide.three .con-left .app-ui{
+        width: 250px;
+      height: 445px;
+    }
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide.three .con-left .app-ui img{
+      width: 250px;
+      height: 445px;
+      border-radius: 0 0 50px 50px
+    }
+    .app-ui{
+      box-shadow: -50px 100px 60px rgba(0, 0, 0, 0.3);
+      /* box-shadow: x축 y축 퍼짐정도 색상; */
+      width: 250px;
+        height: 542px;
+    }
+    
+    
+    .app-ui img:nth-child(1){
+        transform: translate(60px, -60px);
+        /* x축 y축 둘 다 설정 */
+        opacity: 0.4;
+    }
+    
+    .app-ui img:nth-child(2){
+        transform: translate(120px, -120px);
+        opacity: 0.6;
+    }
+    
+    .app-ui img:nth-child(3){
+        transform: translate(180px, -180px);
+        opacity: 0,8;
+    }
+    
+    .app-ui img:nth-child(4){
+        transform: translate(240px, -240px);
+    }
     .sec5-wrap .swiper .swiper-wrapper .swiper-backface-hidden .swiper-slide{
         display: flex;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-left{
         padding-top: 0;
-        height: 500px;
+        height: 450px;
+    }
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide.three .con-left{
+        padding-top: 60px;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right{
         width: 50%;
@@ -220,7 +285,10 @@
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box h3{
         font-size: 24px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li{
+        font-size: 14px;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide.three .ui-logo svg{
         left: 200px;

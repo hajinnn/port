@@ -77,7 +77,7 @@ a{
 
 
 .portfolio-logo svg{
-  width: 90px;
+  width: 60px;
   position: fixed;
   top: 50px;
   left: 30px;
@@ -85,11 +85,26 @@ a{
   fill: #fff;
   transition: 0.1s;
 }
-.portfolio-logo svg.active{
-  fill: rgb(78, 78, 78);
-  /* background-color: #576894;
-  border-radius: 50%; */
+.portfolio-logo #p-logo.active{
+  fill: rgb(154, 154, 154);
 }
+
+.portfolio-logo #p-logo{
+  animation: p-logo 5s infinite;
+}
+@keyframes p-logo{
+  0%{
+      transform: rotate(0);
+  }
+  50%{
+    transform: rotateY(180deg);
+  }
+  100%{
+      transform: rotateY(360deg);
+  }
+
+}
+
 
   
 .left-copyright .txt-box{
@@ -451,18 +466,21 @@ section {
     text-align: end;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    color: #333333;
   }
   .sec2-wrap .con-wrap .con-right .right-txt .two{
     max-width: 450px;
     text-align: end;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    color: #333333;
   }
   .sec2-wrap .con-wrap .con-right .right-txt .three{
     max-width: 450px;
     text-align: end;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    color: #333333;
   }
 
 

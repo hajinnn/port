@@ -30,6 +30,15 @@
         width: 300px;
         height: 300px;
     }
+    .page-one-wrap .bottom-text{
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+    }
+    .typing-side{
+        top: 40px;
+        font-size: 13.5px;
+    }
     .page{
         height: 100%;
     }
@@ -95,12 +104,16 @@
         left: 10px;
         top: 20px;
     }
-    
+    .portfolio-logo #p-logo-h{
+        top: 30px;
+        width: 20px;
+        height: 20px;
+        left: 20px;
+    }
     
     .main_text_box{
         font-size: 1.3rem;
         width: 270px;
-        font-weight: 600;
 
         text-transform: uppercase;
         /* -webkit-text-stroke-width: 1px;
@@ -635,7 +648,7 @@
         letter-spacing: 0;
     }
     .sec6-wrap .sec6-content-wrap{
-        height: 600px;
+        /* height: 600px; */
         padding-top: 40px;
     }
     .sec6-wrap .sec6-content-wrap .button{
