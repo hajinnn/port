@@ -79,18 +79,19 @@ a{
 .portfolio-logo svg{
   width: 60px;
   position: fixed;
-  top: 50px;
+  top: 30px;
   left: 30px;
   z-index: 99999;
   fill: #fff;
   transition: 0.1s;
 }
 .portfolio-logo #p-logo.active{
-  fill: rgb(154, 154, 154);
+  fill: rgb(62, 62, 62);
 }
 
 .portfolio-logo #p-logo{
   animation: p-logo 5s infinite;
+  z-index: 9999;
 }
 @keyframes p-logo{
   0%{
